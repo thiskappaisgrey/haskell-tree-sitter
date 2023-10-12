@@ -11,7 +11,7 @@ copyright:           2019 GitHub
 category:            Tree-sitter, Verilog
 build-type:          Simple
 data-files:          vendor/tree-sitter-verilog/src/node-types.json
-                   , vendor/tree-sitter-verilog/test/corpus/*.txt
+                   , vendor/tree-sitter-verilog/corpus/*.txt
 extra-source-files:  ChangeLog.md
 
 common common
