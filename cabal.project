@@ -1,4 +1,6 @@
 packages:
  tree-sitter
  tree-sitter-haskell
+ tree-sitter-python
+ tree-sitter-verilog
 	

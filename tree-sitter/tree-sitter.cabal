@@ -69,6 +69,8 @@ library
                      , TreeSitter.Symbol
                      , TreeSitter.Tree
                      , TreeSitter.Cursor
+                     -- TODO This is not ready yet and I don't want to commit it
+                     -- , TreeSitter.Query
   include-dirs:        vendor/tree-sitter/lib/include
                      , vendor/tree-sitter/lib/src
   install-includes:    tree_sitter/api.h

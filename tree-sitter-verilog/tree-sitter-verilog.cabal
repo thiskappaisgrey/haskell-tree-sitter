@@ -1,17 +1,17 @@
 cabal-version:       2.4
-name:                tree-sitter-python
+name:                tree-sitter-verilog
 version:             0.9.0.4
-synopsis:            Tree-sitter grammar/parser for Python
-description:         This package provides a parser for Python suitable for use with the tree-sitter package.
+synopsis:            Tree-sitter grammar/parser for Verilog
+description:         This package provides a parser for Verilog suitable for use with the tree-sitter package.
 license:             BSD-3-Clause
 homepage:            https://github.com/tree-sitter/haskell-tree-sitter/tree/master/tree-sitter-python
 author:              Max Brunsfeld, Tim Clem, Rob Rix, Josh Vera, Rick Winfrey, Ayman Nadeem, Patrick Thomson
 maintainer:          tclem@github.com
 copyright:           2019 GitHub
-category:            Tree-sitter, Python
+category:            Tree-sitter, Verilog
 build-type:          Simple
-data-files:          vendor/tree-sitter-python/src/node-types.json
-                   , vendor/tree-sitter-python/test/corpus/*.txt
+data-files:          vendor/tree-sitter-verilog/src/node-types.json
+                   , vendor/tree-sitter-verilog/test/corpus/*.txt
 extra-source-files:  ChangeLog.md
 
 common common
@@ -42,15 +42,14 @@ common common
 
 library
   import: common
-  exposed-modules:     TreeSitter.Python
-  autogen-modules:     Paths_tree_sitter_python
-  other-modules:       Paths_tree_sitter_python
+  exposed-modules:     TreeSitter.Verilog
+  autogen-modules:     Paths_tree_sitter_verilog
+  other-modules:       Paths_tree_sitter_verilog
   build-depends:       base >= 4.12 && < 5
                      , tree-sitter
-  Include-dirs:        vendor/tree-sitter-python/src
+  Include-dirs:        vendor/tree-sitter-verilog/src
   install-includes:    tree_sitter/parser.h
-  c-sources:           vendor/tree-sitter-python/src/parser.c
-                     , vendor/tree-sitter-python/src/scanner.c
+  c-sources:           vendor/tree-sitter-verilog/src/parser.c
   extra-libraries:     stdc++
 
 source-repository head
